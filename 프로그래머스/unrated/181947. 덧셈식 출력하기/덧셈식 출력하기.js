@@ -11,5 +11,6 @@ rl.on('line', function (line) {
 }).on('close', function () {
     var a = Number(input[0])
     var b = Number(input[1])
-    console.log(a + " + " + b +" = "+(a+b))
+    // console.log(a + " + " + b +" = "+(a+b))
+    console.log(`${a} + ${b} = ${a+b}`)
 });
