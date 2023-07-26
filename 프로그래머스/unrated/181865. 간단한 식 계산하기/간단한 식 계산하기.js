@@ -9,14 +9,25 @@ function solution(binomial) {
     
     let a = Number(binomial.split(op)[0])
     let b = Number(binomial.split(op)[1])
-    let result 
     
     if(op === "+"){
-        result = a+b
+        return a+b
     }else if(op === "-"){
-        result = a-b
+        return a-b
     }else if(op === "*"){
-        result = a*b
+        return a*b
     }
-    return result
 }
+
+// 깔끔한 답안...
+// const solution = (binomial) => {
+//     const [num1,op,num2] = binomial.split(' ');
+//     switch(op){
+//         case '+':
+//             return Number(num1)+Number(num2);
+//         case '-':
+//             return Number(num1)-Number(num2);
+//         case '*':
+//             return Number(num1)*Number(num2);
+//     }
+// }
