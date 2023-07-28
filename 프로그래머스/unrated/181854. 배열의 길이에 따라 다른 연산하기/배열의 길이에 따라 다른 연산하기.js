@@ -10,6 +10,10 @@ function solution(arr, n) {
             }
         }
     }
-    
     return arr
 }
+
+// map을 이용한 방법도 있다..
+// return arr.length % 2 == 0 
+//        ? arr.map((e,idx) => idx % 2 != 0 ? (e + n) : e)
+//        : arr.map((e,idx) => idx % 2 == 0 ? (e + n) : e)
