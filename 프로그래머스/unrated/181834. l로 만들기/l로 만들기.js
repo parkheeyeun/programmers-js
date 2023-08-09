@@ -11,4 +11,8 @@ function solution(myString) {
         }
     }
     return result
+
+    // 정규식을 활용한 문제풀이 [a-l]사이에 있는 문자를 찾아서 l로 바꿔준다
+    let answer = myString.replace(/[a-l]/gi,'l');
+    return answer;
 }
